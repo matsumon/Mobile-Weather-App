@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="64dp"
+    android:orientation="horizontal"
+    android:showDividers="end"
+    android:divider="@color/black"
+    android:gravity="start">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="30dp">
+
+        <TextView
+            android:id="@+id/month"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Jan" />
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:text="14"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="fill_parent"
+            android:textAlignment="center"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="AM fog/PM clouds"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/blueTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="43°F"
+                android:textColor="@color/teal_200"
+
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/rain"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="15% precip."/>
+
+            <TextView
+                android:id="@+id/redTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:textColor="@color/design_default_color_error"
+                android:text="43°F"/>
+
+        </LinearLayout>
+    </LinearLayout>
+     Include other widget or layout tags here. These are considered
+            "child views" or "children" of the linear layout
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
