@@ -16,7 +16,7 @@ class WeatherAdapter: RecyclerView.Adapter<WeatherAdapter.ViewHolder>() {
         return ViewHolder(view)
     }
     override fun onBindViewHolder(holder:ViewHolder, position: Int) {
-//        holder.bind(this.forecast[position])
+        holder.bind(this.forecast[position])
     }
     inner class ViewHolder(view:View): RecyclerView.ViewHolder(view) {
         var day: TextView = view.findViewById(R.id.day)
@@ -25,21 +25,14 @@ class WeatherAdapter: RecyclerView.Adapter<WeatherAdapter.ViewHolder>() {
         var redTemp: TextView = view.findViewById(R.id.redTemp)
         var description: TextView = view.findViewById(R.id.description)
         var rain: TextView = view.findViewById(R.id.rain)
-//        init {
-//            this.day.text = "24"
-//            this.month.text = "Feb"
-//            this.blueTemp.text = "80"
-//            this.redTemp.text = "96"
-//            this.description.text = "Cloudy With a Chance of Meatballs"
-//            this.rain.text = "80% precip"
-//        }
-//        fun bind(item: Weather) {
-//            this.day.text = "24"
-//            this.month.text = "Feb"
-//            this.blueTemp.text = "80"
-//            this.redTemp.text = "96"
-//            this.description.text = "Cloudy With a Chance of Meatballs"
-//            this.rain.text = "80% precip"
-//        }
+
+        fun bind(item: Weather) {
+            this.day.text = item.day
+            this.month.text = item.month
+            this.blueTemp.text = item.blueTemp
+            this.redTemp.text = item.redTemp
+            this.description.text = item.description
+            this.rain.text = item.rain
+        }
     }
 }
