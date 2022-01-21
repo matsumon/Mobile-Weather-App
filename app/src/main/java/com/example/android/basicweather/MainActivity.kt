@@ -138,6 +138,7 @@ class MainActivity : AppCompatActivity() {
         rv.adapter = adapter
 //        Dividers that split the cards, below line taken from https://stackoverflow.com/questions/57886100/how-to-add-item-divider-for-recyclerview-in-kotlin
         val decorator = DividerItemDecoration(applicationContext, LinearLayoutManager.VERTICAL)
+//        ask TA why this is vertical and not horizontal. Vertical phone orientation?
         rv.addItemDecoration(decorator)
 
     }
