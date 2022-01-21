@@ -6,5 +6,6 @@ data class Weather(
     var blueTemp: String,
     var redTemp: String,
     var description: String,
-    var rain: String
+    var rain: String,
+    var long_description: String
 )
